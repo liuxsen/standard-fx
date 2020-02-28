@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>git 规范</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.7dc41318.css" as="style"><link rel="preload" href="/assets/js/app.0339cce9.js" as="script"><link rel="preload" href="/assets/js/2.a737a9e8.js" as="script"><link rel="preload" href="/assets/js/4.d141788b.js" as="script"><link rel="prefetch" href="/assets/js/10.6bd81aec.js"><link rel="prefetch" href="/assets/js/11.54e5ca84.js"><link rel="prefetch" href="/assets/js/12.fa49db5d.js"><link rel="prefetch" href="/assets/js/3.d0c4be3c.js"><link rel="prefetch" href="/assets/js/5.da6a9e4a.js"><link rel="prefetch" href="/assets/js/6.b4c67cf1.js"><link rel="prefetch" href="/assets/js/7.590d3d41.js"><link rel="prefetch" href="/assets/js/8.aa4cc8b9.js"><link rel="prefetch" href="/assets/js/9.d02aff3d.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7dc41318.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/projects/" class="nav-link">
+  已有项目
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/git/" class="nav-link router-link-exact-active router-link-active">
+  git
+</a></div><div class="nav-item"><a href="/safe/" class="nav-link">
+  安全
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/projects/" class="nav-link">
+  已有项目
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/git/" class="nav-link router-link-exact-active router-link-active">
+  git
+</a></div><div class="nav-item"><a href="/safe/" class="nav-link">
+  安全
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>git 规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/git/#项目分支操作流程示例" class="sidebar-link">项目分支操作流程示例</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="git-规范"><a href="#git-规范" class="header-anchor">#</a> git 规范</h1> <ol><li>全局安装commitizen &amp; cz-conventional-changelog</li></ol> <div class="language-sh extra-class"><pre class="language-sh"><code><span class="token function">npm</span> <span class="token function">install</span> -g commitizen cz-conventional-changelog
+<span class="token builtin class-name">echo</span> <span class="token string">'{ &quot;path&quot;: &quot;cz-conventional-changelog&quot; }'</span> <span class="token operator">&gt;</span> ~/.czrc
+</code></pre></div><p>安装完毕后，可直接使用git cz来取代git commit。</p> <ul><li>master 分支: 线上稳定版本分支</li> <li>release 分支: 发布分支，准备待发布版本的分支，存在多个，版本发布之后删除</li> <li>feature 分支: 功能分支，完成特定功能开发的分支，存在多个，功能合并之后删除</li> <li>hotfix 分支: 紧急热修复分支，存在多个，紧急版本发布之后删除</li> <li>test 分支： 测试分支</li></ul> <p>更新本地代码使用 <code>git pull --rebase</code> 减少merge路径，保持清晰路线</p> <h2 id="项目分支操作流程示例"><a href="#项目分支操作流程示例" class="header-anchor">#</a> 项目分支操作流程示例</h2> <p><img src="/assets/img/git.f226bc40.png" alt=""></p></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0339cce9.js" defer></script><script src="/assets/js/2.a737a9e8.js" defer></script><script src="/assets/js/4.d141788b.js" defer></script>
+  </body>
+</html>

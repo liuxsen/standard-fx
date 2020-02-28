@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>js 开发规范</title>
+    <meta name="description" content="">
+    <meta name="generator" content="VuePress 1.3.1">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.7dc41318.css" as="style"><link rel="preload" href="/assets/js/app.0339cce9.js" as="script"><link rel="preload" href="/assets/js/2.a737a9e8.js" as="script"><link rel="preload" href="/assets/js/9.d02aff3d.js" as="script"><link rel="prefetch" href="/assets/js/10.6bd81aec.js"><link rel="prefetch" href="/assets/js/11.54e5ca84.js"><link rel="prefetch" href="/assets/js/12.fa49db5d.js"><link rel="prefetch" href="/assets/js/3.d0c4be3c.js"><link rel="prefetch" href="/assets/js/4.d141788b.js"><link rel="prefetch" href="/assets/js/5.da6a9e4a.js"><link rel="prefetch" href="/assets/js/6.b4c67cf1.js"><link rel="prefetch" href="/assets/js/7.590d3d41.js"><link rel="prefetch" href="/assets/js/8.aa4cc8b9.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.7dc41318.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/images/logo.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/projects/" class="nav-link">
+  已有项目
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/safe/" class="nav-link">
+  安全
+</a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="/projects/" class="nav-link">
+  已有项目
+</a></div><div class="nav-item"><a href="/js/" class="nav-link">
+  js
+</a></div><div class="nav-item"><a href="/css/" class="nav-link">
+  css
+</a></div><div class="nav-item"><a href="/git/" class="nav-link">
+  git
+</a></div><div class="nav-item"><a href="/safe/" class="nav-link">
+  安全
+</a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>js 开发规范</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/js.html#命名" class="sidebar-link">命名</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#组件大小写-pascalcase" class="sidebar-link">组件大小写 PascalCase</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#prop-名大小写" class="sidebar-link">Prop 名大小写</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#多个-attribute-的元素-一行一个" class="sidebar-link">多个 attribute 的元素,一行一个</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#模板中简单的表达式" class="sidebar-link">模板中简单的表达式</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#简单的计算属性" class="sidebar-link">简单的计算属性</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#指令缩写" class="sidebar-link">指令缩写</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#自闭和" class="sidebar-link">自闭和</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#vue中实例选项的顺序书写" class="sidebar-link">vue中实例选项的顺序书写</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#单文件组件的顶级元素的顺序" class="sidebar-link">单文件组件的顶级元素的顺序</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#必须在-v-if-v-else-if-v-else-中使用-key" class="sidebar-link">必须在 v-if/v-else-if/v-else 中使用 key</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#元素选择器应该避免在-scoped-中出现。" class="sidebar-link">元素选择器应该避免在 scoped 中出现。</a><ul class="sidebar-sub-headers"></ul></li><li><a href="/js.html#函数命名规范" class="sidebar-link">函数命名规范</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="js-开发规范"><a href="#js-开发规范" class="header-anchor">#</a> js 开发规范</h1> <blockquote><p>以最小commit为原则，防止同事提交代码风格不一致，导致冲突，以下规则为必须，后续可以根据大家开发习惯进行修改</p></blockquote> <h1 id="开发前"><a href="#开发前" class="header-anchor">#</a> 开发前</h1> <ol><li>前端开发规范严格按照 <a href="/eslint-config-alloy.html">eslint-config-alloy</a> 配置编辑器</li> <li>项目中已经引入eslint配置，需要及时处理 eslint 的错误或者警告提示</li></ol> <h2 id="命名"><a href="#命名" class="header-anchor">#</a> 命名</h2> <ul><li>组件名应该以高级别的 (通常是一般化描述的，功能的) 单词开头，以描述性的修饰词结尾。如 <code>SearchButtonClear.vue</code></li> <li>完整单词的组件名 不要简写</li></ul> <h2 id="组件大小写-pascalcase"><a href="#组件大小写-pascalcase" class="header-anchor">#</a> 组件大小写 PascalCase</h2> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span><span class="token punctuation">/&gt;</span></span>
+</code></pre></div><h2 id="prop-名大小写"><a href="#prop-名大小写" class="header-anchor">#</a> Prop 名大小写</h2> <div class="language-js extra-class"><pre class="language-js"><code>props<span class="token operator">:</span> <span class="token punctuation">{</span>
+  greetingText<span class="token operator">:</span> String
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="多个-attribute-的元素-一行一个"><a href="#多个-attribute-的元素-一行一个" class="header-anchor">#</a> 多个 attribute 的元素,一行一个</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span>
+  <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>https://vuejs.org/images/logo.png<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>Vue Logo<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="模板中简单的表达式"><a href="#模板中简单的表达式" class="header-anchor">#</a> 模板中简单的表达式</h2> <blockquote><p>组件模板应该只包含简单的表达式，复杂的表达式则应该重构为计算属性或方法。</p></blockquote> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- 在模板中 --&gt;</span>
+{{ normalizedFullName }}
+</code></pre></div><div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// 复杂表达式已经移入一个计算属性</span>
+computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">normalizedFullName</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>fullName<span class="token punctuation">.</span><span class="token function">split</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token parameter">word</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> word<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">.</span><span class="token function">toUpperCase</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">+</span> word<span class="token punctuation">.</span><span class="token function">slice</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">join</span><span class="token punctuation">(</span><span class="token string">' '</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="简单的计算属性"><a href="#简单的计算属性" class="header-anchor">#</a> 简单的计算属性</h2> <blockquote><p>应该把复杂计算属性分割为尽可能多的更简单的属性。</p></blockquote> <div class="language-js extra-class"><pre class="language-js"><code>computed<span class="token operator">:</span> <span class="token punctuation">{</span>
+  <span class="token function-variable function">basePrice</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>manufactureCost <span class="token operator">/</span> <span class="token punctuation">(</span><span class="token number">1</span> <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>profitMargin<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">discount</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>basePrice <span class="token operator">*</span> <span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">.</span>discountPercent <span class="token operator">||</span> <span class="token number">0</span><span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token function-variable function">finalPrice</span><span class="token operator">:</span> <span class="token keyword">function</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">this</span><span class="token punctuation">.</span>basePrice <span class="token operator">-</span> <span class="token keyword">this</span><span class="token punctuation">.</span>discount
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="指令缩写"><a href="#指令缩写" class="header-anchor">#</a> 指令缩写</h2> <p>统一使用指令缩写如 @event :value 不使用 v-on v-bind</p> <h2 id="自闭和"><a href="#自闭和" class="header-anchor">#</a> 自闭和</h2> <div class="language-vue extra-class"><pre class="language-vue"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>MyComponent</span><span class="token punctuation">/&gt;</span></span>
+</code></pre></div><h2 id="vue中实例选项的顺序书写"><a href="#vue中实例选项的顺序书写" class="header-anchor">#</a> vue中实例选项的顺序书写</h2> <blockquote><p>每个属性之间添加空行，方便阅读</p></blockquote> <ul><li>el</li> <li>name</li> <li>components</li> <li>directives</li> <li>filters</li> <li>extends</li> <li>mixins</li> <li>props</li> <li>watch</li> <li>beforeCreate</li> <li>created</li> <li>beforeMount</li> <li>mounted</li> <li>beforeUpdate</li> <li>updated</li> <li>activated</li> <li>deactivated</li> <li>beforeDestroy</li> <li>destroyd</li> <li>methods</li></ul> <h2 id="单文件组件的顶级元素的顺序"><a href="#单文件组件的顶级元素的顺序" class="header-anchor">#</a> 单文件组件的顶级元素的顺序</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token comment">&lt;!-- ComponentB.vue --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>template</span><span class="token punctuation">&gt;</span></span>...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>template</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span><span class="token script"><span class="token language-javascript"><span class="token comment">/* ... */</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span><span class="token style"><span class="token language-css"><span class="token comment">/* ... */</span></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="必须在-v-if-v-else-if-v-else-中使用-key"><a href="#必须在-v-if-v-else-if-v-else-中使用-key" class="header-anchor">#</a> 必须在 v-if/v-else-if/v-else 中使用 key</h2> <div class="language-html extra-class"><pre class="language-html"><code><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+  <span class="token attr-name">v-if</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>error<span class="token punctuation">&quot;</span></span>
+  <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>search-status<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+  错误：{{ error }}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span>
+  <span class="token attr-name">v-else</span>
+  <span class="token attr-name">key</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>search-results<span class="token punctuation">&quot;</span></span>
+<span class="token punctuation">&gt;</span></span>
+  {{ results }}
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+</code></pre></div><h2 id="元素选择器应该避免在-scoped-中出现。"><a href="#元素选择器应该避免在-scoped-中出现。" class="header-anchor">#</a> 元素选择器应该避免在 scoped 中出现。</h2> <h2 id="函数命名规范"><a href="#函数命名规范" class="header-anchor">#</a> 函数命名规范</h2> <p><strong>浏览器事件</strong></p> <ul><li>onClickBtn</li> <li>onMouseMoveBtn</li> <li>onMouseUpBtn</li> <li>onMouseenterBtn</li></ul> <p><strong>业务事件</strong></p> <ul><li>handleLoginParams</li> <li>handleRegisterBody</li></ul> <p><strong>请求函数</strong></p> <ul><li>fetchSomething</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.0339cce9.js" defer></script><script src="/assets/js/2.a737a9e8.js" defer></script><script src="/assets/js/9.d02aff3d.js" defer></script>
+  </body>
+</html>
